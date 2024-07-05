@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+   <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+    <!-- alert success  -->
+     <div class="true">
+        <div class="on-row">
+            <img src="./assets/images/icon-success-check.svg" alt="">
+            <p>Message Sent!</p>
+        </div>
+       <p> Thanks for completing the form. We'll be in touch soon! </p>
+     </div>
+    <main>
+        <h1>Contact Us</h1>
+
+        <div class="row">
+            <div class="column">
+               <p>First Name <span>*</span></p>
+               <input type="text" id="First" required>
+               <p id="first-name">This field is required</p>
+            </div>
+            <div class="column">
+                <p>Last Name <span>*</span></p>
+                <input type="text" required>
+                <p id="last-name">This field is required</p>
+             </div>
+        </div>
+
+        <div class="column">
+            <p>Email Address <span>*</span></p>
+            <input type="text" required class="email">
+            <p id="email-alert">Please enter a valid email address</p>
+        </div>
+
+        <div class="column">
+            <p>Query Type <span>*</span></p>
+
+            <div class="split">
+                <div class="type">
+                    <input id="general" type="radio" name="type" class="select">
+                    
+                    <label  for="general" class="option">General Enquiry</p>
+                </div>
+
+                <div class="type">
+                    <input id="support" type="radio" name="type" class="select">
+                    
+                    <label  for="support" class="option">Support Request</p>
+                </div>
+            </div>
+            <p id="query-alert">Please select a Query Type</p>
+        </div>
+
+        <div class="column">
+            <p>Message <span>*</span></p>
+            <textarea name="Message" id="message"></textarea>
+            <p id="message-alert">This field is required</p>
+        </div>
+
+        <div class="column-last">
+            <input type="checkbox" id="tick" class="tick">
+            <label for="tick">I consent to being contacted by the team <span>*</span></p>
+            <p id="contact-alert">To submit this form, please consent to being contacted</p>
+        </div>
+
+        <button id="Submit">Submit</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
